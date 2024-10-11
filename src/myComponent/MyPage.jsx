@@ -14,7 +14,7 @@ export function MyPage() {
         method: "get",
         url: `https://tstss-six.vercel.app/qr_code/get_date?unique_key=${key}`,
         headers: {
-          accept: "application/json",
+          "Accept": "application/json",
         },
       })
         .then((response) => {
