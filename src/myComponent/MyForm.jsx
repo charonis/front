@@ -22,9 +22,8 @@ export default function MyForm() {
       method: "post",
       url: "https://tstss-six.vercel.app/qr_code/add_qr",
       headers: {
-        accept: "application/json",
-        "content-Type": "application/json;charset=UTF-8",
-        "Access-Control-Allow-Origin": "https://front-rho-gules.vercel.app/",
+        "Accept": "application/json",
+        "Content-Type": "application/json;charset=UTF-8",
       },
       data: {
         name: date.name,
