@@ -19,7 +19,7 @@ export function MyRout(){
             </div>
             <hr></hr>
             <div className={styles.block_img}>
-                <img src="src\assets\qr_code.png" style={{width:" 400px",height: "400px"}}></img>
+                <img src="src\assets\qr_code.png"></img>
             </div>
             <div className={styles.block_text}>
                 <p className={styles.text}>Добро пожаловать на наш сервис по созданию QR-кодов. Здесь вы можете легко и быстро создать персонализированный QR-код, который приведёт ваших пользователей на специально разработанную для них страницу. Воспользуйтесь всеми преимуществами цифрового мира для вашего бизнеса, маркетинга или личных целей!</p>
