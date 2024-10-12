@@ -17,7 +17,7 @@ export function MyRout(){
                     <Link className={styles.block_link} to="/delete_qr"><div className={styles.link_block}>delete your qr-code</div></Link>
                 </div>
             </div>
-            <hr style={{marginBottom: "200px"}}></hr>
+            <hr></hr>
             <div className={styles.block_img}>
                 <img src="src\assets\qr_code.png" style={{width:" 400px",height: "400px"}}></img>
             </div>
