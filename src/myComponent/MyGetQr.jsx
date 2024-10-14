@@ -3,7 +3,7 @@ import styles from "./MyGetQr.module.css";
 import axios from "axios";
 import { useState } from "react";
 export function MyGetQr() {
-  const [myImage, setMyImage] = useState("");
+  const [myImage, setMyImage] = useState("./src/assets/qr_code.png");
 
   const { register, handleSubmit, reset } = useForm({
     defaultValues: {
