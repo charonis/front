@@ -8,7 +8,7 @@ import { MyDelete } from "./myComponent/MyDelete.jsx";
 
 function App() {
   return (
-    <div style={{ width: "100%", height: "100%"}}>
+    <div style={{ width: "100vw", height: "100vh"}}>
       <BrowserRouter>
         <Routes>
         <Route  path="*" element={<MyRout />}></Route>

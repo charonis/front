@@ -38,106 +38,100 @@ export default function MyForm() {
   }
 
   return (
-    <div className={styles.div_form}>
-      <div>
-        <form onSubmit={handleSubmit(submit)}>
-          <label
-            htmlFor="name"
-            style={{ color: "#F2F2F2", marginBottom: "5px", display: "block" }}
-          >
-            NAME
-          </label>
-          <input
-            {...register("name", { required: isDirty })}
-            className={styles.input_form}
-            name="name"
-            id="name"
-          ></input>
-
-          <label
-            htmlFor="first_name"
-            style={{ color: "#F2F2F2", marginBottom: "5px", display: "block" }}
-          >
-            FIRST NAME
-          </label>
-          <input
-            {...register("first_name", { required: isDirty })}
-            className={styles.input_form}
-            name="first_name"
-            id="first_name"
-          ></input>
-
-          <label
-            htmlFor="patronymic"
-            style={{ color: "#F2F2F2", marginBottom: "5px", display: "block" }}
-          >
-            PATRONYMIC
-          </label>
-          <input
-            {...register("patronymic", { required: isDirty })}
-            className={styles.input_form}
-            name="patronymic"
-            id="patronymic"
-          ></input>
-
-          <label
-            htmlFor="info"
-            style={{ color: "#F2F2F2", marginBottom: "5px", display: "block" }}
-          >
-            INFO
-          </label>
-          <textarea
-            {...register("info", { required: isDirty })}
-            className={styles.info_form}
-            name="info"
-            id="info"
-          ></textarea>
-
-          <button
-            style={{
-              display: "block",
-              marginBottom: "40px",
-              height: "30px",
-              width: "100px",
-              color: "#16141a",
-              backgroundColor: "#F2F2F2",
-              borderRadius: "5px",
-            }}
-          >
-            SUBMIT
-          </button>
-        </form>
-        <div>
-          <label
-            style={{
-              color: "#F2F2F2",
-              marginBottom: "5px",
-              display: "block",
-              textTransform: "uppercase",
-            }}
-          >
-            unique QR code key
-          </label>
-          <div style={{ display: "flex", alignItems: "start" }}>
-            <textarea
-              className={styles.input_form}
-              style={{
-                width: "500px",
-                resize: "none",
-                height: "20px",
-                marginRight: "10px",
-              }}
-              value={key}
-            ></textarea>
-            <button
-              onClick={copy_date}
-              style={{ height: "30px", borderRadius: " 5px" }}
+    <div className={styles.main_box}>
+      <div className={styles.div_box}>
+          <form className={styles.form} onSubmit={handleSubmit(submit)}>
+            <label
+              htmlFor="name"
+              style={{ color: "#F2F2F2", marginBottom: "5px", display: "block" }}
             >
-              copy...
+              NAME
+            </label>
+            <input
+              {...register("name", { required: isDirty })}
+              className={styles.input_form}
+              name="name"
+              id="name"
+            ></input>
+
+            <label
+              htmlFor="first_name"
+              style={{ color: "#F2F2F2", marginBottom: "5px", display: "block" }}
+            >
+              FIRST NAME
+            </label>
+            <input
+              {...register("first_name", { required: isDirty })}
+              className={styles.input_form}
+              name="first_name"
+              id="first_name"
+            ></input>
+
+            <label
+              htmlFor="patronymic"
+              style={{ color: "#F2F2F2", marginBottom: "5px", display: "block" }}
+            >
+              PATRONYMIC
+            </label>
+            <input
+              {...register("patronymic", { required: isDirty })}
+              className={styles.input_form}
+              name="patronymic"
+              id="patronymic"
+            ></input>
+
+            <label
+              htmlFor="info"
+              style={{ color: "#F2F2F2", marginBottom: "5px", display: "block" }}
+            >
+              INFO
+            </label>
+            <textarea
+              {...register("info", { required: isDirty })}
+              className={styles.info_form}
+              name="info"
+              id="info"
+            ></textarea>
+
+            <button
+              style={{
+                display: "block",
+                marginBottom: "40px",
+                height: "30px",
+                width: "100px",
+                color: "#16141a",
+                backgroundColor: "#F2F2F2",
+                borderRadius: "5px",
+              }}
+            >
+              SUBMIT
             </button>
+          </form>
+          <div>
+            <label
+              style={{
+                color: "#F2F2F2",
+                marginBottom: "5px",
+                display: "block",
+                textTransform: "uppercase",
+              }}
+            >
+              unique QR code key
+            </label>
+            <div style={{ display: "flex", alignItems: "start" }}>
+              <textarea
+                className={styles.input_form_down}
+                value={key}
+              ></textarea>
+              <button
+                onClick={copy_date}
+                style={{ height: "30px", borderRadius: " 5px" }}
+              >
+                copy...
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   );
 }
