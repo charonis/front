@@ -1,6 +1,7 @@
 .main_box{
   display: flex;
   justify-content: center;
+  height: 100%;
   align-items: center;
 }
 .test {
@@ -43,7 +44,7 @@
 
 .div_box{
   width: 450px;
-  padding: 10px 20px 10px 20px ;
+  padding: 10px 20px 10px 20px;
 }
 
 .input_form_down{
@@ -120,5 +121,14 @@
     resize: none;
     height: 20px;
     margin-right: 10px;
+  }
+}
+
+@media (max-height: 650px) {
+  .main_box{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: start;
   }
 }
