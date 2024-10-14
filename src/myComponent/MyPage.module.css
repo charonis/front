@@ -1,8 +1,12 @@
 .block_name{
     display: flex;
-    padding: 7px 0 ;
+    /* padding: 7px 0 ; */
+    margin-top: 10px ;
+    margin-left: 20px;
 }
-
+hr{
+    margin-bottom: 15px;
+}
 .name{
     margin-right: 20px;
     color: #f2f2f2;
@@ -22,3 +26,51 @@
     text-align:justify
 }
 
+
+
+@media (max-width: 600px) {
+    .name{
+        margin-right: 20px;
+        color: #f2f2f2;
+        font-size: 26px;
+    }
+    .block_name{
+        display: flex;
+        /* padding: 7px 0 ; */
+        margin-top: 10px ;
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 538px) {
+    .info{
+        font-size: 16px;
+        color: #f2f2f2;
+        max-width: 400px;
+        min-width: 200px;
+        text-align:justify;
+    }
+    .block_name{
+        display: flex;
+        margin-top: 10px ;
+        margin-left: 20px;
+    }
+    
+}
+
+
+@media (max-width: 423px) {
+    .name{
+        margin-right: 20px;
+        color: #f2f2f2;
+        font-size: 6vw;
+    }
+
+    .block_name{
+        display: flex;
+        margin-top: 10px ;
+        margin-left: 5px;
+    }
+    
+}

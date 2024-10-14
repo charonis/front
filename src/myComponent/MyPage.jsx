@@ -41,7 +41,7 @@ export function MyPage() {
           <p className={styles.name}>{info.name}</p>
           <p className={styles.name}>{info.patronymic}</p>
         </div>
-        <hr color="#f2f2f2" style={{ marginBottom: "20px", padding: "0" }}></hr>
+        <hr color="#f2f2f2"></hr>
       </div>
       <div className={styles.block_info}>
         <div className={styles.info}>{info.info}</div>
