@@ -27,13 +27,12 @@ export function MyDelete(){
     return(
 
         <div className={styles.block_input}>
-            <div>
+            <div className={styles.main_block}>
                 <form onSubmit={handleSubmit(submit)}>
                     <label  style={{color: "#F2F2F2", marginBottom: "5px", display: "block", textTransform: "uppercase" }}>insert your key</label>
                     <input  {...register("unique_key")} className={styles.input_form}></input>
                     <button style={{display:"block" , marginBottom: "40px", height: "30px", width: "100px", color: "#16141a", backgroundColor: "#F2F2F2", borderRadius: "5px"}}>SUBMIT</button>
                 </form>
-
                 <p className={styles.text_response}>{responses}</p>
             </div>
         </div>

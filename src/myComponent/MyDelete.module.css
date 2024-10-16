@@ -17,7 +17,33 @@
   height: 25px;
 }
 
-.text_response{
+.text_response {
   font-size: 18px;
   color: #f2f2f2;
+}
+
+@media (max-width: 630px) {
+  .input_form {
+    display: block;
+    margin-bottom: 30px;
+    width: 300px;
+    background-color: #16141a;
+    color: #d83f87;
+    border: #f2f2f2 1px solid;
+    border-radius: 5px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 385px) {
+  .input_form {
+    display: block;
+    margin-bottom: 30px;
+    width: 250px;
+    background-color: #16141a;
+    color: #d83f87;
+    border: #f2f2f2 1px solid;
+    border-radius: 5px;
+    height: 25px;
+  }
 }
